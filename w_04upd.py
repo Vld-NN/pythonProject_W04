@@ -78,7 +78,7 @@ tasks = [
 
 # Создаем главное окно
 root = tk.Tk()
-root.title('Дата, Время и Задачи')
+root.title('Дата, Время, Задача')
 
 # Создаем метки для отображения даты и времени
 time_label = tk.Label(root, font=('Arial', 20), fg='blue')
@@ -107,7 +107,7 @@ edit_button.pack(pady=10)
 task_list = tk.Listbox(root, height=len(tasks), width=50)
 for task in tasks:
     task_list.insert(tk.END, task)
-task_list.pack(padx=10, pady=10)
+task_list.pack(padx=20, pady=20)
 
 # Запускаем функцию обновления времени
 update_time()
