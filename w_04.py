@@ -1,7 +1,7 @@
 import tkinter as tk
 from datetime import datetime
 
-def update_time():
+def update_time(date_label=None):
     current_time = datetime.now().strftime('%H:%M:%S:')
     time_label.config(text=current_time)
 
